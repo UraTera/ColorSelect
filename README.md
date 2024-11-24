@@ -5,5 +5,6 @@ Example of using the AmbilWarna library.
 
 https://github.com/yukuku/ambilwarna
 
-![ColorSelect](https://github.com/user-attachments/assets/fe488d01-a6b9-4d7c-887a-907da80b1f87)
+![ColorSelect](https://github.com/user-attachments/assets/de39c59e-3f59-45af-b160-d4e6c4b1fe47)
+
 
