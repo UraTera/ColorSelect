@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Цвет"
+        android:visibility="gone" />
+
+    <LinearLayout style="@style/line_line">
+        <TextView
+            style="@style/tv_title"
+            android:text="R:" />
+        <TextView
+            android:id="@+id/tvRed"
+            style="@style/tv_value"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/line_line">
+        <TextView
+            style="@style/tv_title"
+            android:text="G:" />
+        <TextView
+            android:id="@+id/tvGreen"
+            style="@style/tv_value"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/line_line">
+        <TextView
+            style="@style/tv_title"
+            android:text="B:" />
+        <TextView
+            android:id="@+id/tvBlue"
+            style="@style/tv_value"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout style="@style/line_line">
+        <TextView
+            style="@style/tv_title"
+            android:text="Hex:" />
+        <TextView
+            android:id="@+id/tvHex"
+            style="@style/tv_value"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/line_line">
+        <TextView
+            style="@style/tv_title"
+            android:text="Int:" />
+
+        <TextView
+            android:id="@+id/tvInt"
+            style="@style/tv_value"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <!-- Цветной -->
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slRed"
+        style="@style/Widget.Material3.Slider.Legacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:valueFrom="0"
+        android:valueTo="255"
+        app:labelBehavior="gone"
+        app:thumbRadius="14dp"
+        app:thumbStrokeWidth="1dp"
+        app:thumbColor="@color/red"
+        app:trackColorActive="@color/red_200"
+        app:trackHeight="10dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slGreen"
+        style="@style/Widget.Material3.Slider.Legacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:valueFrom="0"
+        android:valueTo="255"
+        app:labelBehavior="gone"
+        app:thumbRadius="14dp"
+        app:thumbStrokeWidth="1dp"
+        app:thumbColor="@color/green"
+        app:trackColorActive="@color/green_200"
+        app:trackHeight="10dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slBlue"
+        style="@style/Widget.Material3.Slider.Legacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:valueFrom="0"
+        android:valueTo="255"
+        app:labelBehavior="gone"
+        app:thumbRadius="14dp"
+        app:thumbStrokeWidth="1dp"
+        app:thumbColor="@color/blue"
+        app:trackColorActive="@color/blue_200"
+        app:trackHeight="10dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/bnOpenDlg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Select color" />
+
+</LinearLayout>
